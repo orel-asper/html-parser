@@ -1,0 +1,35 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package": "electron-builder build --mac --win -c.extraMetadata.main=build/electron/main.js --publish never"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bellajs": "^9.3.0",
+    "body-parser": "^1.19.0",
+    "bulma": "^0.9.3",
+    "cheerio": "^1.0.0-rc.10",
+    "cors": "^2.8.5",
+    "debug": "^4.3.2",
+    "express": "^4.17.1",
+    "got": "^11.8.2",
+    "html-minifier-terser": "^6.0.2",
+    "htmlparser2": "^7.1.2",
+    "nodemon": "^2.0.15",
+    "oembed-parser": "^1.5.2",
+    "readabilitySAX": "^1.6.1",
+    "sanitize-html": "^2.5.3",
+    "string-comparison": "^1.0.9",
+    "txtgen": "^2.2.8"
+  },
+  "devDependencies": {
+    "electron": "^16.0.2",
+    "electron-builder": "^22.14.5"
+  }
+}

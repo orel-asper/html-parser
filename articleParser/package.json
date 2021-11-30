@@ -1,0 +1,78 @@
+{
+  "_from": "article-parser",
+  "_id": "@4.2.11",
+  "_inBundle": false,
+  "_integrity": "sha512-X4NLTVaF1uva6IOrPUbioEzTmFBvKUKFVdJmeZfic5HRvdXhEp0p5xlSy/fqIkRTKbSYj6PoEs5CT1ZmGyfISA==",
+  "_location": "/article-parser",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "article-parser",
+    "name": "article-parser",
+    "escapedName": "article-parser",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/article-parser/-/article-parser-4.2.11.tgz",
+  "_shasum": "d3c7b3fe64bc7e75e6eb54148cd7e4e13c1db952",
+  "_spec": "article-parser",
+  "_where": "/Users/orel/Desktop/tai",
+  "author": {
+    "name": "@ndaidong"
+  },
+  "bugs": {
+    "url": "https://github.com/ndaidong/article-parser/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "bellajs": "^9.3.0",
+    "cheerio": "^1.0.0-rc.10",
+    "debug": "^4.3.2",
+    "got": "^11.8.2",
+    "html-minifier-terser": "^6.0.2",
+    "htmlparser2": "^7.1.2",
+    "oembed-parser": "^1.5.2",
+    "readabilitySAX": "^1.6.1",
+    "sanitize-html": "^2.5.3",
+    "string-comparison": "^1.0.9"
+  },
+  "deprecated": false,
+  "description": "To extract main article from given URL",
+  "devDependencies": {
+    "jest": "^27.3.1",
+    "nock": "^13.1.4"
+  },
+  "engines": {
+    "node": ">= 10.14.2"
+  },
+  "homepage": "https://ndaidong.github.io/article-parser-demo/",
+  "keywords": [
+    "article",
+    "extractor",
+    "parser",
+    "readability",
+    "util"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "name": "article-parser",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ndaidong/article-parser.git"
+  },
+  "scripts": {
+    "eval": "DEBUG=*:* node run",
+    "lint": "standard .",
+    "pretest": "npm run lint",
+    "reset": "node reset",
+    "test": "jest --verbose --coverage=true --unhandled-rejections=strict --detectOpenHandles"
+  },
+  "types": "./index.d.ts",
+  "version": "4.2.11"
+}
