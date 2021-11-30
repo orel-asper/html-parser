@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron .",
-    "package": "electron-builder build --mac --win -c.extraMetadata.main=build/electron/main.js --publish never"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +18,7 @@
     "cheerio": "^1.0.0-rc.10",
     "cors": "^2.8.5",
     "debug": "^4.3.2",
+    "electron-squirrel-startup": "^1.0.0",
     "express": "^4.17.1",
     "got": "^11.8.2",
     "html-minifier-terser": "^6.0.2",
@@ -29,7 +31,38 @@
     "txtgen": "^2.2.8"
   },
   "devDependencies": {
-    "electron": "^16.0.2",
-    "electron-builder": "^22.14.5"
+    "@electron-forge/cli": "^6.0.0-beta.61",
+    "@electron-forge/maker-deb": "^6.0.0-beta.61",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.61",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.61",
+    "@electron-forge/maker-zip": "^6.0.0-beta.61",
+    "electron": "^16.0.2"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "y"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
   }
 }
